@@ -1,8 +1,8 @@
 // var sass = require('node-sass');
 const express = require('express');
 var browserSync = require('browser-sync');
-var bs = browserSync.create();
-// bs.init({ logSnippet: true, proxy: 'localhost:3000' });
+// var bs = browserSync.create();
+// bs.init({ logSnippet: false});
 // bs.reload("index.html");
 
 var path = require('path');
@@ -11,6 +11,10 @@ sassMiddleware = require('node-sass-middleware');
 const app = express();
 const port = 3000;
 // console.log(__dirname);
+// app.use(require('connect-browser-sync')(bs));
+
+
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/app/views'));
 
@@ -23,13 +27,16 @@ app.use(
         includePaths: [bourbon]
     })
  );
- // app.use(require('connect-browser-sync')(bs));
+
 
 
 app.use('/', express.static('app'));
 app.get('/', function(req, res) {
     res.render('pages/index');
 });
+app.get('/team',function(req,res){
+  res.render('pages/team');
+})
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port,'0.0.0.0',() => console.log(`nexus19 listening on port ${port}!`))
