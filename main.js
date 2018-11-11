@@ -1,7 +1,9 @@
 // var sass = require('node-sass');
 const express = require('express');
 var browserSync = require('browser-sync');
-var bs = browserSync.create().init({ logSnippet: false });
+var bs = browserSync.create();
+bs.init({ logSnippet: true, proxy: 'localhost:3000' });
+bs.reload("index.html");
 
 var path = require('path');
 bourbon  = require("bourbon").includePaths;
