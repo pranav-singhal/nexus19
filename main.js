@@ -1,6 +1,6 @@
 // var sass = require('node-sass');
 const express = require('express');
-var browserSync = require('browser-sync');
+// var browserSync = require('browser-sync');
 // var bs = browserSync.create();
 // bs.init({ logSnippet: false});
 // bs.reload("index.html");
