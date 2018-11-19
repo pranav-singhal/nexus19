@@ -39,4 +39,4 @@ app.get('/team',function(req,res){
 })
 
 
-app.listen(port,'0.0.0.0',() => console.log(`nexus19 listening on port ${port}!`))
+app.listen(process.env.PORT|| port,'0.0.0.0',() => console.log(`nexus19 listening on port ${port}!`))
