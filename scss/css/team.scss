@@ -27,77 +27,79 @@ body:before {
     // }
   }
 
- .section{
+  .section{
 
-  // background-image: url('/assets/images/team-background1.jpg');
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
-  // scroll-behavior: smooth;
-  // background-size: cover;
-  .column{
-    margin-top: 10px;
-    box-shadow: 0 0 4px rgba(0,0,0,.25);
-    background-color: rgba(239,239,239,0.9);
+    // background-image: url('/assets/images/team-background1.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-attachment: fixed;
+    // scroll-behavior: smooth;
+    // background-size: cover;
+    .column{
+      margin-top: 10px;
+      box-shadow: 0 0 4px rgba(0,0,0,.25);
+      background-color: rgba(239,239,239,0.9);
 
-  }
-
-  .image-card{
-    // border: 1px solid black;
-    box-shadow: none;
-    background-color: transparent;
-    max-height: 42vh;
-    // min-height: 13vh;
-    // max-height: 16vh;
-    margin-top: 20px;
-    img{
-      height: 10vh;
-
-      // height: 100%;
-      display: block;
-      margin: 0 auto;
-      border-radius: 50%;
-    box-shadow: 2px 6px 7px rgba(0,0,0,.25)
     }
-    h4,h5{
+
+    .image-card{
+      // border: 1px solid black;
+      box-shadow: none;
+      background-color: transparent;
+      max-height: 42vh;
+      // min-height: 13vh;
+      // max-height: 16vh;
+      margin-top: 2px;
+      img{
+        height: 10vh;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: 2px 6px 7px rgba(0,0,0,.25);
+        @media screen and(min-width: 300px) {
+          height: 20vw;
+
+        }
+      }
+      h4,h5{
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+    h1,h2{
       text-align: center;
-      font-size: 12px;
+      font-family: museo-slab,sans-serif;
+      font-style: normal;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+    h1{
+
+      font-size: 27px;
+
+      font-weight: 700;
+
+      line-height: 1.45;
+
+      color: rgba(146,2,36,1);
+    }
+    h1.sticky{
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
+      top: 10px;
+      z-index:100
+    }
+    h2{
+
+      font-size: 17px;
+
+      font-weight: 300;
+
+      line-height: 1.8;
+
+      color: rgba(0,0,0,1);
     }
   }
-  h1,h2{
-    text-align: center;
-    font-family: museo-slab,sans-serif;
-    font-style: normal;
-    text-transform: none;
-        letter-spacing: normal;
-  }
-  h1{
-
-font-size: 27px;
-
-font-weight: 700;
-
-line-height: 1.45;
-
-color: rgba(146,2,36,1);
-  }
-  h1.sticky{
-    position: -webkit-sticky;
- position: -moz-sticky;
- position: -ms-sticky;
- position: -o-sticky;
- top: 10px;
- z-index:100
-  }
-  h2{
-
-    font-size: 17px;
-
-    font-weight: 300;
-
-    line-height: 1.8;
-
-    color: rgba(0,0,0,1);
-  }
- }
 }

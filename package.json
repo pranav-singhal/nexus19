@@ -20,5 +20,16 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "connect-browser-sync": "^2.1.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.scss",
+        "options": {
+          "singleQuote": false
+        }
+      }
+    ]
   }
 }
