@@ -6,10 +6,21 @@
   <span></span>
 </div> <!-- cd-overlay-content -->
 
-        <a class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+<a class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
 
 <!-- AOS script -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-          <script>
-            AOS.init();
-          </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    mirror: true,
+    useClassNames: true
+  });
+  new fullpage('#fullpage', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    scrollBar: true
+
+  });
+  // fullpage_api.parallax.init();
+
+  //methods
+</script>

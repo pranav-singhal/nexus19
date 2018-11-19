@@ -1,10 +1,40 @@
-#team {
- .row{
-  background-image: url('/assets/images/team-background1.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  scroll-behavior: smooth;
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  // left: 0;
+  // top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('/assets/images/team-background1.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+#team {
+  .section{
+    position: relative;
+    // .fp-bg{
+    //   background-image: url('/assets/images/team-background1.jpg');
+    // background-size: cover;
+    // background-position: center 80%;
+    // }
+  }
+
+ .section{
+
+  // background-image: url('/assets/images/team-background1.jpg');
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-attachment: fixed;
+  // scroll-behavior: smooth;
+  // background-size: cover;
   .column{
     margin-top: 100px;
     box-shadow: 0 0 4px rgba(0,0,0,.25);
