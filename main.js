@@ -37,6 +37,9 @@ app.get('/', function(req, res) {
 app.get('/team',function(req,res){
   res.render('pages/team');
 })
+app.get('/events', (req,res) => {
+  res.render('pages/events');
+})
 
 
 app.listen(process.env.PORT|| port,'0.0.0.0',() => console.log(`nexus19 listening on port ${port}!`))
