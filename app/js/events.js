@@ -1,4 +1,4 @@
-console.log("inside events js");
+
 var $slider = $('.slideshow .slider'),
   maxItems = $('.item', $slider).length,
   dragging = false,
