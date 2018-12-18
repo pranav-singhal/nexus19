@@ -14,10 +14,14 @@ body:before {
 
 #past-sponsors {
   padding-top: 100px; }
-  #past-sponsors .row h1 {
-    text-align: center; }
-  #past-sponsors .row img {
-    max-width: 80%;
-    max-height: 100%;
-    margin: 4px 4px;
-    mix-blend-mode: multiply; }
+  #past-sponsors h1 {
+    text-align: center;
+    margin-bottom: 10px; }
+  #past-sponsors .row {
+    margin-bottom: 50px; }
+    #past-sponsors .row img {
+      max-width: 90%;
+      max-height: 100%;
+      margin: 4px auto;
+      display: block;
+      padding-top: 40px; }

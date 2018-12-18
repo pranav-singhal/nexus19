@@ -19,15 +19,24 @@ body:before {
 
 #past-sponsors{
   padding-top: 100px;
+  h1{
+    text-align: center;
+    margin-bottom: 10px;
+  }
   .row{
-    h1{
-      text-align: center;
-    }
+    margin-bottom: 50px;
+    // height: 200px;
+    // padding-left: 8%;
+
+
     img{
-      max-width: 80%;
+      max-width: 90%;
       max-height: 100%;
-      margin: 4px 4px;
-    
+      margin: 4px auto;
+      display: block;
+      padding-top: 40px;
+
+
     }
   }
 }
