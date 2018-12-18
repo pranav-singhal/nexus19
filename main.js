@@ -6,40 +6,50 @@ const express = require('express');
 // bs.reload("index.html");
 
 var path = require('path');
-bourbon  = require("bourbon").includePaths;
+bourbon = require('bourbon').includePaths;
 sassMiddleware = require('node-sass-middleware');
 const app = express();
 const port = 3000;
 // console.log(__dirname);
 // app.use(require('connect-browser-sync')(bs));
 
-
-
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/app/views'));
 
-
 app.use(
-    sassMiddleware({
-        src: __dirname + '/scss',
-        dest: __dirname + '/app',
-        debug: true,
-        includePaths: [bourbon]
-    })
- );
-
-
+  sassMiddleware({
+    src: __dirname + '/scss',
+    dest: __dirname + '/app',
+    debug: true,
+    includePaths: [bourbon]
+  })
+);
 
 app.use('/', express.static('app'));
 app.get('/', function(req, res) {
-    res.render('pages/index');
+  res.render('pages/index');
 });
-app.get('/team',function(req,res){
+
+app.get('/team', function(req, res) {
   res.render('pages/team');
-})
-app.get('/events', (req,res) => {
+});
+app.get('/events', (req, res) => {
   res.render('pages/events');
-})
+});
 
+app.get('/gallery', (req, res) => {
+  res.render('pages/index');
+});
 
-app.listen(process.env.PORT|| port,'0.0.0.0',() => console.log(`nexus19 listening on port ${port}!`))
+app.get('/contact-us', (req, res) => {
+  res.render('pages/index');
+});
+app.get('/about-us', (req, res) => {
+  res.render('pages/index');
+});
+app.get('/past-sponsors', (req, res) => {
+  res.render('pages/past-sponsors');
+});
+app.listen(process.env.PORT || port, '0.0.0.0', () =>
+  console.log(`nexus19 listening on port ${port}!`)
+);
