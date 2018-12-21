@@ -50,6 +50,9 @@ app.get('/about-us', (req, res) => {
 app.get('/past-sponsors', (req, res) => {
   res.render('pages/past-sponsors');
 });
+app.get('/get_modal_content', (req, res) => {
+  res.render('partials/modal', { layout: false });
+});
 app.listen(process.env.PORT || port, '0.0.0.0', () =>
   console.log(`nexus19 listening on port ${port}!`)
 );

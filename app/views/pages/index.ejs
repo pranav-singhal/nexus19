@@ -2,10 +2,18 @@
 <html lang="en" dir="ltr">
 <head>
   <% include ../partials/head.ejs %>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Arvo|Bitter|Patrick+Hand|Poor+Story" rel="stylesheet">
 </head>
 <style media="screen">
   .container-fluid{
     padding-left: 0;
+  }
+  .test-font{
+    /* font-family: 'Patrick Hand', cursive; */
+font-family: 'Bitter', serif;
+/* font-family: 'Arvo', serif; */
+/* font-family: 'Acme', sans-serif; */
+/* font-family: 'Poor Story', cursive; */
   }
 </style>
 <body>
@@ -20,7 +28,7 @@
         <div id="section-background" >
           <div id="title-header">
             <h2 class="title-header-view">
-              <span class="title">
+              <span class="title test-font">
                 Nexus 2019
               </span> <br>
               <span class="subtitle">Coming Soon!</span>
