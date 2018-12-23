@@ -4,118 +4,122 @@
   <%- include('../partials/head',{events_page: true}) %>
 </head>
 <body>
-<% include ../partials/nav_top.ejs %>
-      <div class="split-slideshow">
-        <div class="slideshow">
-          <div class="slider">
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/acapella.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/ad-mad.jpg" />
-            </div>
-            <div  onclick="launchModal(this)"class="item">
-              <img src="/assets/images/events/battle-of-bands.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/countenance.jpg" />
-
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/creative-writing.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/exposure.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/general-quiz.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/jugalbandi.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/madaari.png" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/poetry-recitation.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/raazmataz.jpg" />
-            </div>
-            <!-- <div class="item">
-              <img src="/assets/images/events/rock-night.jpg" />
-            </div> -->
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/rolling-strokes.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/sports-quiz.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/story-illustration.jpg" />
-            </div>
-            <div class="item">
-              <img src="/assets/images/events/thirak.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/vantage-point.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/visual-acoustics.jpg" />
-            </div>
-            <div onclick="launchModal(this)" class="item">
-              <img src="/assets/images/events/vyakhyaa.jpg" />
-            </div>
-
-
-
-
-
-
-
-
-
-
-          </div>
+  <% include ../partials/nav_top.ejs %>
+  <div class="split-slideshow">
+    <div class="slideshow">
+      <div class="slider">
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/acapella.jpg" />
         </div>
-        <div class="slideshow-text">
-          <div class="item" >Acapella</div>
-          <div class="item" >Ad-MAD</div>
-          <div class="item" >Battle of Bands</div>
-          <div class="item" >Countenance</div>
-          <div class="item" >Creative Writing</div>
-          <div class="item" >Exposure</div>
-          <div class="item" >General Quiz</div>
-          <div class="item" >Jugalbandi</div>
-          <div class="item" >Madaari</div>
-          <div class="item" >Poetry Recitation</div>
-          <div class="item" >Raazmataz</div>
-          <!-- <div class=" item">Rock Night</div> -->
-          <div class="item" >Rolling Strokes</div>
-          <div class="item" >Sports Quiz</div>
-          <!-- <div class=" item">Star Night</div> -->
-          <div class="item" >Story Illustration</div>
-          <div class="item" >Thirak</div>
-          <div class="item" >Vantage Point</div>
-          <div class="item" >Visual Acoustics</div>
-          <div class="item" >Vyakhyaa</div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/ad-mad.jpg" />
         </div>
+        <div  onclick="launchModal(this)"class="item">
+          <img src="/assets/images/events/battle-of-bands.jpg" />
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/countenance.jpg" />
+
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/creative-writing.jpg" />
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/exposure.jpg" />
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/general-quiz.jpg" />
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/jugalbandi.jpg" />
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/madaari.png" />
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/poetry-recitation.jpg" />
+        </div>
+        <div onclick="launchModal(this)" class="item">
+          <img src="/assets/images/events/raazmataz.jpg" />
+        </div>
+        <!-- <div class="item">
+        <img src="/assets/images/events/rock-night.jpg" />
+      </div> -->
+      <div onclick="launchModal(this)" class="item">
+        <img src="/assets/images/events/rolling-strokes.jpg" />
       </div>
-<!-- modal -->
-      <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              <p>loading...</p>
-            </div>
+      <div onclick="launchModal(this)" class="item">
+        <img src="/assets/images/events/sports-quiz.jpg" />
+      </div>
+      <div onclick="launchModal(this)" class="item">
+        <img src="/assets/images/events/story-illustration.jpg" />
+      </div>
+      <div class="item">
+        <img src="/assets/images/events/thirak.jpg" />
+      </div>
+      <div onclick="launchModal(this)" class="item">
+        <img src="/assets/images/events/vantage-point.jpg" />
+      </div>
+      <div onclick="launchModal(this)" class="item">
+        <img src="/assets/images/events/visual-acoustics.jpg" />
+      </div>
+      <div onclick="launchModal(this)" class="item">
+        <img src="/assets/images/events/vyakhyaa.jpg" />
+      </div>
 
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <div class="slideshow-text">
+    <div class="item" >Acapella</div>
+    <div class="item" >Ad-MAD</div>
+    <div class="item" >Battle of Bands</div>
+    <div class="item" >Countenance</div>
+    <div class="item" >Creative Writing</div>
+    <div class="item" >Exposure</div>
+    <div class="item" >General Quiz</div>
+    <div class="item" >Jugalbandi</div>
+    <div class="item" >Madaari</div>
+    <div class="item" >Poetry Recitation</div>
+    <div class="item" >Raazmataz</div>
+    <!-- <div class=" item">Rock Night</div> -->
+    <div class="item" >Rolling Strokes</div>
+    <div class="item" >Sports Quiz</div>
+    <!-- <div class=" item">Star Night</div> -->
+    <div class="item" >Story Illustration</div>
+    <div class="item" >Thirak</div>
+    <div class="item" >Vantage Point</div>
+    <div class="item" >Visual Acoustics</div>
+    <div class="item" >Vyakhyaa</div>
+  </div>
+</div>
+<!-- modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Event Details</h4>
+        </div>
+        <div class="modal-body">
+          <p>loading...</p>
+          <span> <a href="#">  Registration Link Coming Soon... </a></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.modal -->
 
 <script type="text/javascript">
 
@@ -138,7 +142,7 @@ function launchModal(elem){
       console.log("success");
       var result = result
       console.log(result);
-      $('.modal-body').html(result)
+      $('.modal-body p').html(result)
     }
   })
   console.log("launcing modal");
@@ -152,83 +156,83 @@ function launchModal(elem){
 
 // slider srcipt
 
-  var $slider = $('.slideshow .slider'),
-    maxItems = $('.item', $slider).length,
-    dragging = false,
-    tracking,
-    rightTracking;
+var $slider = $('.slideshow .slider'),
+maxItems = $('.item', $slider).length,
+dragging = false,
+tracking,
+rightTracking;
 
-  $sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
+$sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
 
-  rightItems = $('.item', $sliderRight).toArray();
-  reverseItems = rightItems.reverse();
-  $('.slider', $sliderRight).html('');
-  for (i = 0; i < maxItems; i++) {
-    $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+rightItems = $('.item', $sliderRight).toArray();
+reverseItems = rightItems.reverse();
+$('.slider', $sliderRight).html('');
+for (i = 0; i < maxItems; i++) {
+  $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+}
+
+$slider.addClass('slideshow-left');
+$('.slideshow-left').slick({
+  vertical: true,
+  verticalSwiping: true,
+  arrows: false,
+  infinite: true,
+  dots: true,
+  speed: 1000,
+  cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+}).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+
+  if (currentSlide > nextSlide && nextSlide == 0 && currentSlide == maxItems - 1) {
+    $('.slideshow-right .slider').slick('slickGoTo', -1);
+    $('.slideshow-text').slick('slickGoTo', maxItems);
+  } else if (currentSlide < nextSlide && currentSlide == 0 && nextSlide == maxItems - 1) {
+    $('.slideshow-right .slider').slick('slickGoTo', maxItems);
+    $('.slideshow-text').slick('slickGoTo', -1);
+  } else {
+    $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
+    $('.slideshow-text').slick('slickGoTo', nextSlide);
   }
+}).on("mousewheel", function(event) {
+  event.preventDefault();
+  if (event.deltaX > 0 || event.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else if (event.deltaX < 0 || event.deltaY > 0) {
+    $(this).slick('slickPrev');
+  };
+}).on('mousedown touchstart', function(){
+  dragging = true;
+  tracking = $('.slick-track', $slider).css('transform');
+  tracking = parseInt(tracking.split(',')[5]);
+  rightTracking = $('.slideshow-right .slick-track').css('transform');
+  rightTracking = parseInt(rightTracking.split(',')[5]);
+}).on('mousemove touchmove', function(){
+  if (dragging) {
+    newTracking = $('.slideshow-left .slick-track').css('transform');
+    newTracking = parseInt(newTracking.split(',')[5]);
+    diffTracking = newTracking - tracking;
+    $('.slideshow-right .slick-track').css({'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'});
+  }
+}).on('mouseleave touchend mouseup', function(){
+  dragging = false;
+});
 
-  $slider.addClass('slideshow-left');
-  $('.slideshow-left').slick({
-    vertical: true,
-    verticalSwiping: true,
-    arrows: false,
-    infinite: true,
-    dots: true,
-    speed: 1000,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
-  }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-
-    if (currentSlide > nextSlide && nextSlide == 0 && currentSlide == maxItems - 1) {
-      $('.slideshow-right .slider').slick('slickGoTo', -1);
-      $('.slideshow-text').slick('slickGoTo', maxItems);
-    } else if (currentSlide < nextSlide && currentSlide == 0 && nextSlide == maxItems - 1) {
-      $('.slideshow-right .slider').slick('slickGoTo', maxItems);
-      $('.slideshow-text').slick('slickGoTo', -1);
-    } else {
-      $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
-      $('.slideshow-text').slick('slickGoTo', nextSlide);
-    }
-  }).on("mousewheel", function(event) {
-    event.preventDefault();
-    if (event.deltaX > 0 || event.deltaY < 0) {
-      $(this).slick('slickNext');
-    } else if (event.deltaX < 0 || event.deltaY > 0) {
-      $(this).slick('slickPrev');
-    };
-  }).on('mousedown touchstart', function(){
-    dragging = true;
-    tracking = $('.slick-track', $slider).css('transform');
-    tracking = parseInt(tracking.split(',')[5]);
-    rightTracking = $('.slideshow-right .slick-track').css('transform');
-    rightTracking = parseInt(rightTracking.split(',')[5]);
-  }).on('mousemove touchmove', function(){
-    if (dragging) {
-      newTracking = $('.slideshow-left .slick-track').css('transform');
-      newTracking = parseInt(newTracking.split(',')[5]);
-      diffTracking = newTracking - tracking;
-      $('.slideshow-right .slick-track').css({'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'});
-    }
-  }).on('mouseleave touchend mouseup', function(){
-    dragging = false;
-  });
-
-  $('.slideshow-right .slider').slick({
-    swipe: false,
-    vertical: true,
-    arrows: false,
-    infinite: true,
-    speed: 950,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-    initialSlide: maxItems - 1
-  });
-  $('.slideshow-text').slick({
-    swipe: false,
-    vertical: true,
-    arrows: false,
-    infinite: true,
-    speed: 900,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
-  });
+$('.slideshow-right .slider').slick({
+  swipe: false,
+  vertical: true,
+  arrows: false,
+  infinite: true,
+  speed: 950,
+  cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+  initialSlide: maxItems - 1
+});
+$('.slideshow-text').slick({
+  swipe: false,
+  vertical: true,
+  arrows: false,
+  infinite: true,
+  speed: 900,
+  cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+});
 
 </script>
 <% include ../partials/nav_bottom.ejs %>

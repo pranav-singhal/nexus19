@@ -3,6 +3,26 @@ html {
   overflow: hidden;
   background: #110101; }
 
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%; }
+  .vertical-alignment-helper .modal-dialog {
+    font-family: "Special Elite", cursive;
+    display: table-cell;
+    vertical-align: middle; }
+    .vertical-alignment-helper .modal-dialog .modal-content {
+      background: rgba(109, 109, 109, 0.960784); }
+    .vertical-alignment-helper .modal-dialog p {
+      font-size: 2.25vw;
+      text-align: center; }
+    .vertical-alignment-helper .modal-dialog a {
+      color: #282828; }
+    .vertical-alignment-helper .modal-dialog .modal-header {
+      border-bottom: none; }
+      .vertical-alignment-helper .modal-dialog .modal-header .modal-title {
+        text-align: center; }
+
 #events {
   height: 100%;
   background: #110101;

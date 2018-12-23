@@ -3,6 +3,32 @@ html {
   overflow: hidden;
   background: #110101;
 }
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  .modal-dialog {
+    .modal-content {
+      background: rgba(109, 109, 109, 0.9607843137254902);
+    }
+    font-family: "Special Elite", cursive;
+    p {
+      font-size: 2.25vw;
+      text-align: center;
+    }
+    a {
+      color: #282828;
+    }
+    display: table-cell;
+    vertical-align: middle;
+    .modal-header {
+      border-bottom: none;
+      .modal-title {
+        text-align: center;
+      }
+    }
+  }
+}
 
 #events {
   height: 100%;
