@@ -3,13 +3,16 @@
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*::after, *::before {
-  content: ''; }
+*::after,
+*::before {
+  content: ""; }
 
 body {
   font-size: 100%;
@@ -26,13 +29,15 @@ a {
 Main components
 
 -------------------------------- */
-html, body {
+html,
+body {
   height: 100%; }
 
 header {
   z-index: 3; }
 
-.cd-logo, .cd-nav-trigger {
+.cd-logo,
+.cd-nav-trigger {
   position: fixed;
   display: inline-block; }
 
@@ -72,7 +77,8 @@ header {
   background-color: #ffffff;
   z-index: 10; }
 
-.cd-nav-trigger .cd-icon::before, .cd-nav-trigger .cd-icon:after {
+.cd-nav-trigger .cd-icon::before,
+.cd-nav-trigger .cd-icon:after {
   /* upper and lower lines of the menu icon */
   position: absolute;
   top: 0;
@@ -89,9 +95,9 @@ header {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   /* apply transition to transform property */
-  -webkit-transition: -webkit-transform .3s;
-  -moz-transition: -moz-transform .3s;
-  transition: transform .3s; }
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s; }
 
 .cd-nav-trigger .cd-icon::before {
   -webkit-transform: translateY(-6px) rotate(0deg);
@@ -107,7 +113,8 @@ header {
   -o-transform: translateY(6px) rotate(0deg);
   transform: translateY(6px) rotate(0deg); }
 
-.cd-nav-trigger::before, .cd-nav-trigger::after {
+.cd-nav-trigger::before,
+.cd-nav-trigger::after {
   /* 2 rounded colored backgrounds for the menu icon */
   position: absolute;
   top: 0;
@@ -181,7 +188,8 @@ header {
   /* user clicks on the .cd-nav-trigger element - transform the icon */
   background-color: rgba(255, 255, 255, 0); }
 
-.cd-nav-trigger.close-nav .cd-icon::before, .cd-nav-trigger.close-nav .cd-icon::after {
+.cd-nav-trigger.close-nav .cd-icon::before,
+.cd-nav-trigger.close-nav .cd-icon::after {
   background-color: white; }
 
 .cd-nav-trigger.close-nav .cd-icon::before {
@@ -254,7 +262,8 @@ header {
     font-size: 32px;
     font-size: 2rem; } }
 
-.cd-overlay-nav, .cd-overlay-content {
+.cd-overlay-nav,
+.cd-overlay-content {
   /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
   position: fixed;
   top: 18px;
@@ -267,7 +276,8 @@ header {
   -o-transform: translateX(-20px) translateY(20px);
   transform: translateX(-20px) translateY(20px); }
 
-.cd-overlay-nav span, .cd-overlay-content span {
+.cd-overlay-nav span,
+.cd-overlay-content span {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
@@ -291,13 +301,14 @@ header {
   -o-transform: scale(0);
   transform: scale(0); }
 
-.cd-overlay-nav.is-hidden, .cd-overlay-content.is-hidden {
+.cd-overlay-nav.is-hidden,
+.cd-overlay-content.is-hidden {
   /* background fades out at the end of the animation */
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s; }
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
 
 .cd-overlay-nav {
   /* main rounded colored bg 1 */

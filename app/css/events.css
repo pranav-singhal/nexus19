@@ -1,11 +1,12 @@
-body, html {
+body,
+html {
   overflow: hidden;
   background: #110101; }
 
 #events {
   height: 100%;
   background: #110101;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden; }
 
 .slideshow {
@@ -59,7 +60,7 @@ body, html {
         height: 15px;
         text-align: center; }
         .slideshow .slick-dots li button:before {
-          content: '';
+          content: "";
           background: #fff;
           color: #fff;
           height: 2px;
@@ -70,7 +71,7 @@ body, html {
           right: 0;
           left: auto;
           transform: translateY(-50%);
-          transition: all .3s ease-in-out;
+          transition: all 0.3s ease-in-out;
           opacity: 0.6; }
       .slideshow .slick-dots li.slick-active button:before {
         width: 40px;
@@ -85,24 +86,23 @@ body, html {
       position: absolute; }
 
 .slideshow-text {
+  box-shadow: inset 5px 5px 10px #000000, inset 0px -5px 11px #fbfbfb;
+  background: #000000ad;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  font-size: 80px;
+  font-size: 6.25vw;
   width: 100vw;
   text-align: center;
   color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 40;
   pointer-events: none;
   text-transform: uppercase;
   letter-spacing: 20px;
   line-height: 0.8; }
-  @media (max-width: 767px) {
-    .slideshow-text {
-      font-size: 10px; } }
 
 .the-most {
   position: fixed;

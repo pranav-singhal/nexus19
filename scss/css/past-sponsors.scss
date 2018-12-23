@@ -7,36 +7,32 @@ body:before {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background: url('/assets/images/2144.jpg') no-repeat center center;
+  background: url("/assets/images/2144.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0 0 ;
-
-
+  background-position: 0 0;
 }
 
-#past-sponsors{
+#past-sponsors {
   padding-top: 100px;
-  h1{
+  h1 {
     text-align: center;
     margin-bottom: 10px;
   }
-  .row{
+  .row {
     margin-bottom: 50px;
+    background: #f5f2f2de;
     // height: 200px;
     // padding-left: 8%;
 
-
-    img{
+    img {
       max-width: 90%;
       max-height: 100%;
       margin: 4px auto;
       display: block;
       padding-top: 40px;
-
-
     }
   }
 }

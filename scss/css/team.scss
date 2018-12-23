@@ -12,12 +12,14 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 .row{
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 #team {
+  font-family: 'Special Elite', cursive;
   .section{
     position: relative;
     // .fp-bg{
@@ -68,7 +70,6 @@ body:before {
     }
     h1,h2{
       text-align: center;
-      font-family: museo-slab,sans-serif;
       font-style: normal;
       text-transform: none;
       letter-spacing: normal;
