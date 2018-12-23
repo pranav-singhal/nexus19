@@ -23,7 +23,7 @@ $(document).ready(function() {
       Seconds: {
         text: 'Seconds',
         color: 'white',
-        show: false
+        show: true
       }
     }
   });

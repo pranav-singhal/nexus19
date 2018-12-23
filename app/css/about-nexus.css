@@ -1,0 +1,32 @@
+* {
+  font-family: "Special Elite", cursive; }
+  * hr {
+    height: 10px;
+    background-color: #fa5a5a;
+    position: relative; }
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
+
+.row > [class*="col"] {
+  display: flex;
+  flex-direction: column; }
+
+#about-nexus {
+  margin-top: 150px; }
+  #about-nexus h1 {
+    color: #fa5a5a;
+    font-size: 6vw; }
+  #about-nexus p,
+  #about-nexus ul {
+    font-size: 3vw; }
+    #about-nexus p li,
+    #about-nexus ul li {
+      margin-top: 12px; }
+  #about-nexus #about-nexus-content img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }

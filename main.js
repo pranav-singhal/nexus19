@@ -64,8 +64,8 @@ app.get('/gallery', (req, res) => {
 app.get('/contact-us', (req, res) => {
   res.render('pages/index');
 });
-app.get('/about-us', (req, res) => {
-  res.render('pages/index');
+app.get('/about-nexus', (req, res) => {
+  res.render('pages/about-nexus');
 });
 app.get('/past-sponsors', (req, res) => {
   res.render('pages/past-sponsors');
