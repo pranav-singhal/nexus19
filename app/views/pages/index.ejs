@@ -2,29 +2,39 @@
 <html lang="en" dir="ltr">
 <head>
   <% include ../partials/head.ejs %>
+  <!-- <script src="http://git.wimbarelds.nl/TimeCircles/inc/TimeCircles.js" charset="utf-8"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timecircles/1.5.3/TimeCircles.js"></script>
+  <script src="/js/countdown.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="http://git.wimbarelds.nl/TimeCircles/inc/TimeCircles.css">
 </head>
 <style media="screen">
-  .container-fluid{
-    padding-left: 0;
-  }
-  .test-font{
-    /* font-family: 'Patrick Hand', cursive; */
-/* font-family: 'Bitter', serif; */
-/* font-family: 'Arvo', serif; */
-font-family: 'Acme', sans-serif;
-/* font-family: 'Poor Story', cursive; */
-/* font-family: 'BenchNine', sans-serif; */
-/* font-family: 'Lobster Two', cursive; */
-/* font-family: 'Luckiest Guy', cursive; */
-/* font-family: 'Cookie', cursive; */
-/* font-family: 'Special Elite', cursive; */
-/* font-family: 'Cinzel', serif; */
-/* font-family: 'Permanent Marker', cursive; */
-/* font-family: 'Amatic SC', cursive; */
-/* font-family: 'Righteous', cursive; */
-/* font-family: 'Pacifico', cursive; */
-/* font-family: 'ZCOOL QingKe HuangYou', cursive; */
-  }
+.container-fluid{
+  padding-left: 0;
+}
+.test-font{
+  /* font-family: 'Patrick Hand', cursive; */
+  /* font-family: 'Bitter', serif; */
+  /* font-family: 'Arvo', serif; */
+  font-family: 'Acme', sans-serif;
+  /* font-family: 'Poor Story', cursive; */
+  /* font-family: 'BenchNine', sans-serif; */
+  /* font-family: 'Lobster Two', cursive; */
+  /* font-family: 'Luckiest Guy', cursive; */
+  /* font-family: 'Cookie', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+  /* font-family: 'Cinzel', serif; */
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Amatic SC', cursive; */
+  /* font-family: 'Righteous', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+}
+.time_circles .textDiv_Days,
+.textDiv_Hours,
+.textDiv_Minutes,
+.textDiv_Seconds {
+  color: white;
+}
 </style>
 <body>
 
@@ -41,15 +51,20 @@ font-family: 'Acme', sans-serif;
               <span class="title ">
                 Nexus 2019
               </span> <br>
-              <span class="subtitle ">Coming Soon!</span>
 
+              <span class="subtitle">
+                <div id="DateCountdown" data-date="2019-02-21 11:00:00" style="width: 100%;"></div>
+              </span>
             </h2>
+
           </div>
+
         </div>
       </div>
+
     </main>
 
-  <% include ../partials/nav_bottom.ejs %>
+    <% include ../partials/nav_bottom.ejs %>
 
 
   </div>
