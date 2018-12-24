@@ -1,35 +1,32 @@
 $(document).ready(function() {
   $('#DateCountdown').TimeCircles({
     animation: 'smooth',
-    bg_width: 0.5,
-    fg_width: 0.023333333333333334,
-    circle_bg_color: 'grey',
+    bg_width: 1.2,
+    fg_width: 0.1,
+    circle_bg_color: '#60686F',
     time: {
       Days: {
         text: 'Days',
-        color: 'white',
+        color: '#fff',
         show: true
       },
       Hours: {
         text: 'Hours',
-        color: 'white',
+        color: '#fff',
         show: true
       },
       Minutes: {
         text: 'Minutes',
-        color: 'white',
+        color: '#fff',
         show: true
       },
       Seconds: {
         text: 'Seconds',
-        color: 'white',
+        color: '#fff',
         show: true
       }
     }
   });
 
   console.log('in countdown js');
-  $('#DateCountdown')
-    .TimeCircles()
-    .rebuild();
 });
