@@ -1,0 +1,299 @@
+$height: 240px;
+$width: 360px;
+
+$light-blue: #3498db;
+$dark-blue: #2c3e50;
+$white: #ecf0f1;
+$gray: #3498db;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+  background-image: url(https://spark.adobe.com/page/YGSMxx4ueu8gu/images/358da894-0a36-46b5-9ad3-c7d5c7d71296.jpg?asset_id=00df0dd7-8a41-48af-9aa1-3f552b602521&img_etag=407669d4ec2a0981104e17ff33613110&size=2560);
+  background-position: center center;
+  background-size: cover;
+
+  font-family: "Acme", sans-serif;
+
+  main#contact-us-page {
+    margin-top: 100px;
+    h1 {
+      text-align: center;
+      color: white;
+    }
+  }
+  .row {
+    .column {
+      .contact-card {
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+div.business-card {
+  height: $height;
+  width: $width;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 100px;
+  // margin-left: $width/-2;
+  // margin-top: $height/-2;
+  position: relative;
+  top: 0;
+  left: 0;
+  // perspective: 1000;
+  &:hover .flipper,
+  &.hover .flipper {
+    transform: rotateY(190deg) rotateZ(90deg);
+  }
+}
+
+div.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform-origin: center $height/2;
+}
+
+div.front,
+div.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $height;
+  width: $width;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+}
+
+div.front {
+  background-color: white;
+  // background: url("http://www.jboeijenga.nl/img/front.jpg");
+  // background: url("http://www.jboeijenga.nl/img/back.jpg");
+  z-index: 0;
+
+  figure {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: -60px -60px;
+  }
+
+  div.name {
+    position: absolute;
+    bottom: 72px;
+    width: 100%;
+
+    // left: ($width - 200px) / 2;
+
+    span {
+      display: block;
+      text-align: center;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    span.full-name {
+      color: black;
+    }
+
+    span.title {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: red;
+    }
+  }
+}
+
+div.back {
+  background-color: rgba(150, 0, 27, 1);
+  color: white;
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+  transform: rotateY(180deg) rotateZ(90deg);
+
+  div.container-sm {
+    float: left;
+    width: 40%;
+    height: 100%;
+    position: relative;
+  }
+
+  div.container-lg {
+    float: left;
+    width: 60%;
+    margin-top: 2rem;
+  }
+
+  figure {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: -60px -60px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+
+  ul.social {
+    font-size: 1.25rem;
+
+    li {
+      margin-top: 1rem;
+
+      &:first-child {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+  $height: 200px;
+  $width: 240px;
+
+  div.business-card {
+    height: $height;
+    width: $width;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 100px;
+    // margin-left: $width/-2;
+    // margin-top: $height/-2;
+    position: relative;
+    top: 0;
+    left: 0;
+    // perspective: 1000;
+    &:hover .flipper,
+    &.hover .flipper {
+      transform: rotateY(190deg) rotateZ(90deg);
+    }
+  }
+
+  div.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform-origin: center $height/2;
+  }
+
+  div.front,
+  div.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $height;
+    width: $width;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+  }
+
+  div.front {
+    background-color: $dark-blue;
+    z-index: 0;
+
+    figure {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: -60px -60px;
+    }
+
+    div.name {
+      position: absolute;
+      bottom: 10px;
+      left: ($width - 200px) / 2;
+
+      span {
+        display: block;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      span.full-name {
+        color: black;
+      }
+
+      span.title {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: red;
+      }
+    }
+  }
+
+  div.back {
+    background-color: $light-blue;
+    color: white;
+    width: $width;
+    height: $height;
+    box-sizing: border-box;
+    transform: rotateY(180deg) rotateZ(90deg);
+
+    div.container-sm {
+      float: left;
+      width: 40%;
+      height: 100%;
+      position: relative;
+    }
+
+    div.container-lg {
+      float: left;
+      width: 60%;
+      margin-top: 2rem;
+    }
+
+    figure {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: -60px -60px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+
+    ul.social {
+      font-size: 1.25rem;
+
+      li {
+        margin-top: 1rem;
+
+        &:first-child {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

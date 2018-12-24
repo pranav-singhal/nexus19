@@ -62,7 +62,7 @@ app.get('/gallery', (req, res) => {
 });
 
 app.get('/contact-us', (req, res) => {
-  res.render('pages/index');
+  res.render('pages/contact-us');
 });
 app.get('/about-nexus', (req, res) => {
   res.render('pages/about-nexus');

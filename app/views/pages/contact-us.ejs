@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/contact-us.css">
+  <style media="screen">
+
+  </style>
+</head>
+<body>
+  <%- include ../partials/preloader.ejs %>
+  <%- include ../partials/nav_top.ejs %>
+  <main id="contact-us-page" class="container-fluid">
+<h1>Contact Us</h1>
+  <div class="row">
+    <div class="column col-md-6">
+      <div class="contact-card">
+        <%- include('../partials/contact-card.ejs',{name: 'Pranav Singhal', position: 'Web Designer', phone: '+91-9650906992',email: 'pranavsinghal96@gmail.com'}) %>
+      </div>
+
+    </div>
+    <div class="column col-md-6">
+      <div class="contact-card">
+        <%- include('../partials/contact-card.ejs',{name: 'Pranav Singhal', position: 'Web Designer', phone: '+91-9650906992',email: 'pranavsinghal96@gmail.com'}) %>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <%- include ../partials/nav_bottom.ejs %>
+
+</body>
+<script type="text/javascript">
+  $('.card').click(function(){
+    $(this).toggleClass('flipped');
+  });
+</script>
+</html>

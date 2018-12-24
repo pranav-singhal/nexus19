@@ -1,15 +1,31 @@
 html,
 body {
   min-height: 100%;
-  min-width: 100%;
-  background-color: #efefef; }
+  min-width: 100%; }
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/c119837c-f784-4084-8e57-6eaf2eaebb15.jpg?asset_id=e11db1a6-9c74-47d1-a44f-9b25c796861b&img_etag=db97201b056bd722603c3a93c9a10d3d&size=2560") no-repeat center center;
+  background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/5eb2338b-5e83-4fba-8c41-da1bc36f0ffb.jpg?asset_id=6ab382c8-9db0-49fe-952e-94e6005c45ca&img_etag=91be09df16e8cba824e6f1541c670167&size=2560") no-repeat center center;
+  background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/cc81560c-478d-4ed3-ab22-9279e7d0ea81.jpg?asset_id=47110b7f-cbcd-467e-a602-53e9ea014dfe&img_etag=0cd323c60536d431d35fdd73d74caece&size=2560") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 0; }
 
 main * {
   overflow-x: hidden;
   overflow-y: hidden; }
 
 * {
-  font-family: "Special Elite", cursive; }
+  font-family: "Acme", sans-serif; }
   * hr {
     height: 10px;
     background-color: #fa5a5a;
@@ -27,16 +43,20 @@ main * {
   display: block;
   text-align: center; }
 
+h1 {
+  font-family: monotone; }
+  h1 span {
+    font-family: monotone; }
+
 #about-nexus {
-  margin-top: 150px; }
-  #about-nexus img {
-    max-width: 100%; }
+  margin-top: 120px; }
   #about-nexus img.shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   #about-nexus h1 {
-    color: #fa5a5a;
-    font-size: 6vw;
-    text-align: center; }
+    color: white;
+    font-size: 6.8vw;
+    text-align: center;
+    font-weight: bold; }
   #about-nexus p,
   #about-nexus ul {
     font-size: 2vw; }
@@ -44,42 +64,91 @@ main * {
     #about-nexus ul li {
       margin-top: 12px; }
   #about-nexus p#intro {
-    font-size: 3vw; }
+    font-size: 2.2vw;
+    text-align: center; }
   #about-nexus p#subtext {
-    font-size: 4vw; }
+    font-size: 2.6vw;
+    text-align: center; }
+    @media (max-width: 767.98px) {
+      #about-nexus p#subtext {
+        font-size: 3.6vw; } }
   @media (max-width: 767.98px) {
     #about-nexus {
       margin-top: 50px; } }
   @media (max-width: 991.98px) {
     #about-nexus {
       margin-top: 50px; } }
+  #about-nexus #about-nexus-content .column p {
+    color: white;
+    font-family: Lato, sans-serif;
+    font-size: 1.95em;
+    font-weight: 400;
+    line-height: 1.5; }
+    @media (max-width: 767.98px) {
+      #about-nexus #about-nexus-content .column p {
+        font-size: 4vw; } }
+    @media (max-width: 991.98px) {
+      #about-nexus #about-nexus-content .column p {
+        font-size: 4vw; } }
   #about-nexus #about-nexus-content img {
-    min-height: 360px;
     margin-top: 50px; }
   #about-nexus #highlights .col-md-3 {
     margin-bottom: 20px; }
     #about-nexus #highlights .col-md-3 img {
       border-radius: 8%;
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 150px;
+      max-height: 150px; }
+      @media (max-width: 767.98px) {
+        #about-nexus #highlights .col-md-3 img {
+          max-width: 50px;
+          max-height: 50px; } }
+      @media (max-width: 991.98px) {
+        #about-nexus #highlights .col-md-3 img {
+          max-width: 50px;
+          max-height: 50px; } }
     #about-nexus #highlights .col-md-3 .col-md-12 {
       margin-bottom: 30px; }
       #about-nexus #highlights .col-md-3 .col-md-12 span {
-        font-weight: bold; }
+        font-weight: bold;
+        color: white; }
   #about-nexus #fest-nights img {
-    min-height: 150px; }
-  #about-nexus #fest-nights .text-section h1 {
-    font-size: 2vw;
-    color: #940020; }
-  #about-nexus #fest-nights .text-section p {
-    font-size: 1.4vw; }
+    min-height: 150px;
+    max-width: 100%; }
+  #about-nexus #fest-nights .text-section {
+    color: white; }
+    #about-nexus #fest-nights .text-section h1 {
+      font-size: 2vw; }
+    #about-nexus #fest-nights .text-section p {
+      font-size: 1.4vw; }
+      @media (max-width: 767.98px) {
+        #about-nexus #fest-nights .text-section p {
+          font-size: 10px; } }
+      @media (max-width: 991.98px) {
+        #about-nexus #fest-nights .text-section p {
+          font-size: 10px; } }
   #about-nexus #fest-nights #sufi-night .text-section {
-    margin-top: 3%; }
+    margin-top: 8%; }
+    @media (max-width: 767.98px) {
+      #about-nexus #fest-nights #sufi-night .text-section {
+        margin-top: 0; } }
+    @media (max-width: 991.98px) {
+      #about-nexus #fest-nights #sufi-night .text-section {
+        margin-top: 0; } }
   #about-nexus #fest-nights #rock-night,
   #about-nexus #fest-nights #star-night {
     margin-top: 3%; }
     #about-nexus #fest-nights #rock-night .text-section,
     #about-nexus #fest-nights #star-night .text-section {
       margin-top: 3%; }
+      @media (max-width: 767.98px) {
+        #about-nexus #fest-nights #rock-night .text-section,
+        #about-nexus #fest-nights #star-night .text-section {
+          margin-top: 0; } }
+      @media (max-width: 991.98px) {
+        #about-nexus #fest-nights #rock-night .text-section,
+        #about-nexus #fest-nights #star-night .text-section {
+          margin-top: 0; } }
   #about-nexus #fest-nights #star-night {
     margin-bottom: 50px; }

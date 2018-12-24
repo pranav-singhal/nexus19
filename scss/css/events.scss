@@ -145,10 +145,10 @@ html {
 }
 
 .slideshow-text {
-  box-shadow: inset 5px 5px 10px #000000, inset 0px -5px 11px #fbfbfb;
+  box-shadow: inset 5px 5px 10px #000000;
   background: #000000ad;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  // padding-top: 2px;
+  // padding-bottom: 2px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -164,7 +164,7 @@ html {
   pointer-events: none;
   text-transform: uppercase;
 
-  line-height: 2.8;
+  line-height: 1.4;
 
   // @media (max-width: 767px) {
   //   font-size: 1.4vw;

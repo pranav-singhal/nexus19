@@ -2,8 +2,43 @@ html,
 body {
   min-height: 100%;
   min-width: 100%;
-  background-color: rgb(239, 239, 239);
+  // background-color: rgb(239, 239, 239);
 }
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  // https://spark.adobe.com/page/YGSMxx4ueu8gu/images/c119837c-f784-4084-8e57-6eaf2eaebb15.jpg?asset_id=e11db1a6-9c74-47d1-a44f-9b25c796861b&img_etag=db97201b056bd722603c3a93c9a10d3d&size=2560
+  // background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/c119837c-f784-4084-8e57-6eaf2eaebb15.jpg?asset_id=e11db1a6-9c74-47d1-a44f-9b25c796861b&img_etag=db97201b056bd722603c3a93c9a10d3d&size=2560")
+  //   no-repeat center center;
+  // background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/ed817f2b-ea78-42d4-b170-546123bb6ac8.jpg?asset_id=51db56da-ab7f-4e63-942d-a2e9b41556e6&img_etag=5abc8031db05b02985e282dba653c6db&size=2560")
+  //   no-repeat center center;
+
+  // background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/b4bd1fdc-70ec-4bd9-9e53-b2e4487ad916.jpg?asset_id=99672282-3031-4682-9678-973abfd6c3b1&img_etag=8b046022718005799243d369c64b6a16&size=2560")
+  //   no-repeat center center;
+  // background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/dc9bee8e-c1c3-4409-9d53-56fa967480f9.jpg?asset_id=ab66e50c-69f5-46a7-a355-56aea0b51b22&img_etag=301d471af213ea00cef854e188a9f885&size=2560")
+  //   no-repeat center center;
+  // background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/d12eb2e7-b933-494d-b46b-e3abbcf69e75.jpg?asset_id=40a086e9-c33d-4437-b5fc-7c1d1d065548&img_etag=835eb4d97f2b21c5aadc08da1ff9bc23&size=2560")
+  //   no-repeat center center;
+  background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/c119837c-f784-4084-8e57-6eaf2eaebb15.jpg?asset_id=e11db1a6-9c74-47d1-a44f-9b25c796861b&img_etag=db97201b056bd722603c3a93c9a10d3d&size=2560")
+    no-repeat center center;
+  background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/5eb2338b-5e83-4fba-8c41-da1bc36f0ffb.jpg?asset_id=6ab382c8-9db0-49fe-952e-94e6005c45ca&img_etag=91be09df16e8cba824e6f1541c670167&size=2560")
+    no-repeat center center;
+  background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/cc81560c-478d-4ed3-ab22-9279e7d0ea81.jpg?asset_id=47110b7f-cbcd-467e-a602-53e9ea014dfe&img_etag=0cd323c60536d431d35fdd73d74caece&size=2560")
+    no-repeat center center;
+  // background: url("/assets/images/about-background.jpg") no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+}
+
 main {
   * {
     overflow-x: hidden;
@@ -12,7 +47,7 @@ main {
 }
 
 * {
-  font-family: "Special Elite", cursive;
+  font-family: "Acme", sans-serif;
   hr {
     height: 10px;
     background-color: rgb(250, 90, 90);
@@ -32,17 +67,23 @@ main {
   display: block;
   text-align: center;
 }
-#about-nexus {
-  img {
-    max-width: 100%;
+h1 {
+  font-family: monotone;
+  span {
+    font-family: monotone;
   }
+}
+#about-nexus {
   img.shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   h1 {
-    color: rgb(250, 90, 90);
-    font-size: 6vw;
+    color: white;
+    font-size: 6.8vw;
     text-align: center;
+    // font-family: Lato, sans-serif;
+    font-weight: bold;
+    // font-family: "Arvo", serif;
   }
   p,
   ul {
@@ -52,12 +93,17 @@ main {
     }
   }
   p#intro {
-    font-size: 3vw;
+    font-size: 2.2vw;
+    text-align: center;
   }
   p#subtext {
-    font-size: 4vw;
+    font-size: 2.6vw;
+    text-align: center;
+    @media (max-width: 767.98px) {
+      font-size: 3.6vw;
+    }
   }
-  margin-top: 150px;
+  margin-top: 120px;
   @media (max-width: 767.98px) {
     margin-top: 50px;
   }
@@ -66,8 +112,24 @@ main {
     margin-top: 50px;
   }
   #about-nexus-content {
+    .column p {
+      // background: rgba(150, 0, 27, 0.78);
+      color: white;
+      // font-family: "Poor Story", cursive;
+      // font-family: "Arvo", serif;
+      font-family: Lato, sans-serif;
+      font-size: 1.95em;
+      font-weight: 400;
+      line-height: 1.5;
+      @media (max-width: 767.98px) {
+        font-size: 4vw;
+      }
+      @media (max-width: 991.98px) {
+        font-size: 4vw;
+      }
+    }
     img {
-      min-height: 360px;
+      // min-height: 360px;
       margin-top: 50px;
     }
   }
@@ -77,11 +139,23 @@ main {
         border-radius: 8%;
         display: block;
         margin: 0 auto;
+
+        max-width: 150px;
+        max-height: 150px;
+        @media (max-width: 767.98px) {
+          max-width: 50px;
+          max-height: 50px;
+        }
+        @media (max-width: 991.98px) {
+          max-width: 50px;
+          max-height: 50px;
+        }
       }
       .col-md-12 {
         margin-bottom: 30px;
         span {
           font-weight: bold;
+          color: white;
         }
       }
       margin-bottom: 20px;
@@ -90,25 +164,44 @@ main {
   #fest-nights {
     img {
       min-height: 150px;
+      max-width: 100%;
     }
     .text-section {
+      color: white;
       h1 {
         font-size: 2vw;
-        color: rgb(148, 0, 32);
       }
       p {
         font-size: 1.4vw;
+        @media (max-width: 767.98px) {
+          font-size: 10px;
+        }
+        @media (max-width: 991.98px) {
+          font-size: 10px;
+        }
       }
     }
     #sufi-night {
       .text-section {
-        margin-top: 3%;
+        margin-top: 8%;
+        @media (max-width: 767.98px) {
+          margin-top: 0;
+        }
+        @media (max-width: 991.98px) {
+          margin-top: 0;
+        }
       }
     }
     #rock-night,
     #star-night {
       .text-section {
         margin-top: 3%;
+        @media (max-width: 767.98px) {
+          margin-top: 0;
+        }
+        @media (max-width: 991.98px) {
+          margin-top: 0;
+        }
       }
       margin-top: 3%;
     }

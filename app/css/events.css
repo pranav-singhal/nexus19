@@ -103,10 +103,8 @@ html {
       position: absolute; }
 
 .slideshow-text {
-  box-shadow: inset 5px 5px 10px #000000, inset 0px -5px 11px #fbfbfb;
+  box-shadow: inset 5px 5px 10px #000000;
   background: #000000ad;
-  padding-top: 10px;
-  padding-bottom: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,7 +118,7 @@ html {
   font-weight: 40;
   pointer-events: none;
   text-transform: uppercase;
-  line-height: 2.8; }
+  line-height: 1.4; }
 
 .the-most {
   position: fixed;
