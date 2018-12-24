@@ -1,32 +1,83 @@
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #efefef; }
+
+main * {
+  overflow-x: hidden; }
+
 * {
   font-family: "Special Elite", cursive; }
   * hr {
     height: 10px;
     background-color: #fa5a5a;
-    position: relative; }
+    position: relative;
+    bottom: 10px;
+    width: 100%; }
+    @media (max-width: 767.98px) {
+      * hr {
+        bottom: 0; } }
+    @media (max-width: 991.98px) {
+      * hr {
+        bottom: 0; } }
 
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap; }
-
-.row > [class*="col"] {
-  display: flex;
-  flex-direction: column; }
+.center-text {
+  display: block;
+  text-align: center; }
 
 #about-nexus {
   margin-top: 150px; }
+  #about-nexus img {
+    max-width: 100%; }
+  #about-nexus img.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   #about-nexus h1 {
     color: #fa5a5a;
-    font-size: 6vw; }
+    font-size: 6vw;
+    text-align: center; }
   #about-nexus p,
   #about-nexus ul {
-    font-size: 3vw; }
+    font-size: 2vw; }
     #about-nexus p li,
     #about-nexus ul li {
       margin-top: 12px; }
-  #about-nexus #about-nexus-content img {
-    max-width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  @media (max-width: 767.98px) {
+    #about-nexus {
+      margin-top: 50px; } }
+  @media (max-width: 991.98px) {
+    #about-nexus {
+      margin-top: 50px; } }
+  #about-nexus #highlights .col-md-3 {
+    margin-bottom: 20px; }
+    #about-nexus #highlights .col-md-3 img {
+      border-radius: 8%;
+      display: block;
+      margin: 0 auto; }
+    #about-nexus #highlights .col-md-3 .col-md-12 {
+      margin-bottom: 30px; }
+      #about-nexus #highlights .col-md-3 .col-md-12 span {
+        font-weight: bold; }
+  #about-nexus #fest-nights img {
+    min-height: 150px; }
+  #about-nexus #fest-nights .text-section h1 {
+    font-size: 2vw;
+    color: #940020; }
+  #about-nexus #fest-nights .text-section p {
+    font-size: 1.4vw; }
+  #about-nexus #fest-nights #sufi-night .text-section {
+    margin-top: 15%; }
+    @media (max-width: 767.98px) {
+      #about-nexus #fest-nights #sufi-night .text-section {
+        margin-top: 0; } }
+    @media (max-width: 991.98px) {
+      #about-nexus #fest-nights #sufi-night .text-section {
+        margin-top: 0; } }
+  #about-nexus #fest-nights #rock-night,
+  #about-nexus #fest-nights #star-night {
+    margin-top: 3%; }
+    #about-nexus #fest-nights #rock-night .text-section,
+    #about-nexus #fest-nights #star-night .text-section {
+      margin-top: 3%; }
+  #about-nexus #fest-nights #star-night {
+    margin-bottom: 50px; }

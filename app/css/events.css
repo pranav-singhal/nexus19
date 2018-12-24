@@ -113,7 +113,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  font-size: 6.25vw;
+  font-size: 2.25vw;
   width: 100vw;
   text-align: center;
   color: #fff;
@@ -123,6 +123,9 @@ html {
   text-transform: uppercase;
   letter-spacing: 20px;
   line-height: 0.8; }
+  @media (max-width: 767px) {
+    .slideshow-text {
+      font-size: 10px; } }
 
 .the-most {
   position: fixed;

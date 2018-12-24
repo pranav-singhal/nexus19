@@ -1,41 +1,125 @@
+html,
+body {
+  // height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgb(239, 239, 239);
+}
+main {
+  * {
+    overflow-x: hidden;
+  }
+}
+
 * {
   font-family: "Special Elite", cursive;
   hr {
     height: 10px;
     background-color: rgb(250, 90, 90);
     position: relative;
+    bottom: 10px;
+    width: 100%;
+    @media (max-width: 767.98px) {
+      bottom: 0;
+    }
+
+    @media (max-width: 991.98px) {
+      bottom: 0;
+    }
   }
 }
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+.center-text {
+  display: block;
+  text-align: center;
 }
-.row > [class*="col"] {
-  display: flex;
-  flex-direction: column;
-}
-
 #about-nexus {
+  img {
+    max-width: 100%;
+  }
+  img.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   h1 {
     color: rgb(250, 90, 90);
     font-size: 6vw;
+    text-align: center;
   }
   p,
   ul {
-    font-size: 3vw;
+    font-size: 2vw;
     li {
       margin-top: 12px;
     }
   }
   margin-top: 150px;
-  #about-nexus-content {
+  @media (max-width: 767.98px) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-top: 50px;
+  }
+  // #about-nexus-content {
+  //   display: -webkit-box;
+  //   display: -webkit-flex;
+  //   display: -ms-flexbox;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+  // #about-nexus-content > [class*="col"] {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  #highlights {
+    .col-md-3 {
+      img {
+        border-radius: 8%;
+        display: block;
+        margin: 0 auto;
+      }
+      .col-md-12 {
+        margin-bottom: 30px;
+        span {
+          font-weight: bold;
+        }
+      }
+      margin-bottom: 20px;
+    }
+  }
+  #fest-nights {
     img {
-      max-width: 100%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      min-height: 150px;
+    }
+    .text-section {
+      h1 {
+        font-size: 2vw;
+        color: rgb(148, 0, 32);
+      }
+      p {
+        font-size: 1.4vw;
+      }
+    }
+    #sufi-night {
+      .text-section {
+        margin-top: 15%;
+        @media (max-width: 767.98px) {
+          margin-top: 0;
+        }
+
+        @media (max-width: 991.98px) {
+          margin-top: 0;
+        }
+      }
+    }
+    #rock-night,
+    #star-night {
+      .text-section {
+        margin-top: 3%;
+      }
+      margin-top: 3%;
+    }
+    #star-night {
+      margin-bottom: 50px;
     }
   }
 }
