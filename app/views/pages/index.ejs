@@ -36,13 +36,14 @@
   color: white;
 }
 </style>
+<% include ../partials/preloader.ejs%>
 <body>
-
+  <nav>
+    <% include ../partials/nav_top.ejs %>
+  </nav>
 
   <div class="container-fluid">
-    <nav>
-      <% include ../partials/nav_top.ejs %>
-    </nav>
+
     <main class="cd-content">
       <div class="row">
         <div id="section-background" >
