@@ -9,9 +9,9 @@ $gray: #3498db;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 body {
-  background-image: url(https://spark.adobe.com/page/YGSMxx4ueu8gu/images/358da894-0a36-46b5-9ad3-c7d5c7d71296.jpg?asset_id=00df0dd7-8a41-48af-9aa1-3f552b602521&img_etag=407669d4ec2a0981104e17ff33613110&size=2560);
-  background-position: center center;
-  background-size: cover;
+  // background-image: url(https://spark.adobe.com/page/YGSMxx4ueu8gu/images/358da894-0a36-46b5-9ad3-c7d5c7d71296.jpg?asset_id=00df0dd7-8a41-48af-9aa1-3f552b602521&img_etag=407669d4ec2a0981104e17ff33613110&size=2560);
+  // background-position: center center;
+  // background-size: cover;
 
   font-family: "Acme", sans-serif;
 
@@ -30,6 +30,21 @@ body {
       }
     }
   }
+}
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("https://spark.adobe.com/page/YGSMxx4ueu8gu/images/358da894-0a36-46b5-9ad3-c7d5c7d71296.jpg?asset_id=00df0dd7-8a41-48af-9aa1-3f552b602521&img_etag=407669d4ec2a0981104e17ff33613110&size=2560")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 div.business-card {
