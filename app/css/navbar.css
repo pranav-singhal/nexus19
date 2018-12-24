@@ -16,7 +16,7 @@ Primary style
 
 body {
   font-size: 100%;
-  font-family: "Special Elite", cursive;
+  font-family: "Special Elite", cursive !important;
   color: #091d23;
   background-color: #ffb441; }
 

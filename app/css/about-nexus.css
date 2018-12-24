@@ -5,7 +5,8 @@ body {
   background-color: #efefef; }
 
 main * {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 * {
   font-family: "Special Elite", cursive; }
@@ -13,7 +14,7 @@ main * {
     height: 10px;
     background-color: #fa5a5a;
     position: relative;
-    bottom: 50px;
+    bottom: 0px;
     width: 100%; }
     @media (max-width: 767.98px) {
       * hr {
@@ -42,12 +43,19 @@ main * {
     #about-nexus p li,
     #about-nexus ul li {
       margin-top: 12px; }
+  #about-nexus p#intro {
+    font-size: 3vw; }
+  #about-nexus p#subtext {
+    font-size: 4vw; }
   @media (max-width: 767.98px) {
     #about-nexus {
       margin-top: 50px; } }
   @media (max-width: 991.98px) {
     #about-nexus {
       margin-top: 50px; } }
+  #about-nexus #about-nexus-content img {
+    min-height: 360px;
+    margin-top: 50px; }
   #about-nexus #highlights .col-md-3 {
     margin-bottom: 20px; }
     #about-nexus #highlights .col-md-3 img {

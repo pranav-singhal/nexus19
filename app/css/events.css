@@ -108,12 +108,14 @@ html {
 .slideshow-text {
   box-shadow: inset 5px 5px 10px #000000, inset 0px -5px 11px #fbfbfb;
   background: #000000ad;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  font-size: 2.25vw;
+  font-size: 4.25vw;
   width: 100vw;
   text-align: center;
   color: #fff;
@@ -121,11 +123,7 @@ html {
   font-weight: 40;
   pointer-events: none;
   text-transform: uppercase;
-  letter-spacing: 20px;
-  line-height: 0.8; }
-  @media (max-width: 767px) {
-    .slideshow-text {
-      font-size: 10px; } }
+  line-height: 2.8; }
 
 .the-most {
   position: fixed;
