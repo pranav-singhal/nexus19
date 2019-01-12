@@ -27,6 +27,7 @@ body {
       .contact-card {
         width: fit-content;
         margin: 0 auto;
+        max-width: 100%;
       }
     }
   }
@@ -75,6 +76,7 @@ div.flipper {
 div.front,
 div.back {
   backface-visibility: hidden;
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -211,6 +213,8 @@ div.back {
   div.front,
   div.back {
     backface-visibility: hidden;
+    max-width: 100%;
+
     position: absolute;
     top: 0;
     left: 0;
