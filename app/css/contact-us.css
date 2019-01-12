@@ -94,9 +94,8 @@ div.back {
     height: 100%;
     position: relative; }
   div.back div.container-lg {
-    float: left;
     width: 60%;
-    margin-top: 2rem; }
+    margin: 9rem auto; }
   div.back figure {
     position: absolute;
     top: 35%;
