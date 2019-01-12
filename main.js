@@ -70,6 +70,9 @@ app.get('/about-nexus', (req, res) => {
 app.get('/past-sponsors', (req, res) => {
   res.render('pages/past-sponsors');
 });
+app.get('/faq', (req, res) => {
+  res.render('pages/faq');
+});
 app.get('/get_modal_content', (req, res) => {
   console.log(req.query);
   const content = req.query.modal_name;

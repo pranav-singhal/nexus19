@@ -1,0 +1,40 @@
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  opacity: 0.4;
+
+  // left: 0;
+  // top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("https://straightwire.com/images/backgrounds/faq-background.jpg")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+main#faq {
+  hr {
+    border: 1px solid black;
+  }
+  padding-top: 100px;
+  font-weight: bold;
+  em {
+    font-weight: 600;
+  }
+  .question {
+    p:before {
+      content: "Q)";
+    }
+  }
+  .answer {
+    i {
+      margin-right: 6px;
+    }
+  }
+}
