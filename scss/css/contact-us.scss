@@ -60,9 +60,11 @@ div.business-card {
   top: 0;
   left: 0;
   // perspective: 1000;
+  -webkit-perspective: 1000;
   &:hover .flipper,
   &.hover .flipper {
     transform: rotateY(190deg) rotateZ(90deg);
+    -webkit-transform: rotateY(190deg) rotateZ(90deg);
   }
 }
 
@@ -76,6 +78,7 @@ div.flipper {
 div.front,
 div.back {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   max-width: 100%;
   position: absolute;
   top: 0;
@@ -117,6 +120,7 @@ div.front {
 
     span.full-name {
       color: black;
+      backface-visibility: hidden;
     }
 
     span.title {
@@ -135,6 +139,7 @@ div.back {
   height: $height;
   box-sizing: border-box;
   transform: rotateY(180deg) rotateZ(90deg);
+  -webkit-transform: rotateY(180deg) rotateZ(90deg);
 
   div.container-sm {
     float: left;
@@ -184,6 +189,10 @@ div.back {
 @media screen and (device-aspect-ratio: 40/71) {
   $height: 200px;
   $width: 240px;
+  $light-blue: #3498db;
+  $dark-blue: #2c3e50;
+  $white: #ecf0f1;
+  $gray: #3498db;
 
   div.business-card {
     height: $height;
@@ -197,9 +206,11 @@ div.back {
     top: 0;
     left: 0;
     // perspective: 1000;
+    -webkit-perspective: 1000;
     &:hover .flipper,
     &.hover .flipper {
       transform: rotateY(190deg) rotateZ(90deg);
+      -webkit-transform: rotateY(190deg) rotateZ(90deg);
     }
   }
 
@@ -213,8 +224,8 @@ div.back {
   div.front,
   div.back {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     max-width: 100%;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -224,7 +235,9 @@ div.back {
   }
 
   div.front {
-    background-color: $dark-blue;
+    background-color: white;
+    // background: url("http://www.jboeijenga.nl/img/front.jpg");
+    // background: url("http://www.jboeijenga.nl/img/back.jpg");
     z-index: 0;
 
     figure {
@@ -239,11 +252,14 @@ div.back {
 
     div.name {
       position: absolute;
-      bottom: 10px;
-      left: ($width - 200px) / 2;
+      bottom: 72px;
+      width: 100%;
+
+      // left: ($width - 200px) / 2;
 
       span {
         display: block;
+        text-align: center;
         font-size: 40px;
         line-height: 50px;
       }
@@ -262,12 +278,13 @@ div.back {
   }
 
   div.back {
-    background-color: $light-blue;
+    background-color: rgba(150, 0, 27, 1);
     color: white;
     width: $width;
     height: $height;
     box-sizing: border-box;
     transform: rotateY(180deg) rotateZ(90deg);
+    -webkit-transform: rotateY(180deg) rotateZ(90deg);
 
     div.container-sm {
       float: left;
@@ -277,9 +294,8 @@ div.back {
     }
 
     div.container-lg {
-      float: left;
       width: 60%;
-      margin-top: 2rem;
+      margin: 9rem auto;
     }
 
     figure {
@@ -303,7 +319,7 @@ div.back {
     }
 
     ul.social {
-      font-size: 1.25rem;
+      font-size: 1rem;
 
       li {
         margin-top: 1rem;
