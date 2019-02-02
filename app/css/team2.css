@@ -11,6 +11,9 @@
 #team #extended-core .column {
   min-height: 180px; }
 
+#team #union .column {
+  min-height: 232px; }
+
 #team #organising .column,
 #team #creative .column {
   min-height: 130px; }
