@@ -12,7 +12,10 @@
   min-height: 180px; }
 
 #team #union .column {
-  min-height: 232px; }
+  min-height: 350px; }
+  @media screen and (max-width: 600px) {
+    #team #union .column {
+      min-height: 200px; } }
 
 #team #organising .column,
 #team #creative .column {

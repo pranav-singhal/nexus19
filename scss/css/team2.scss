@@ -18,7 +18,10 @@
   }
   #union {
     .column {
-      min-height: 232px;
+      min-height: 350px;
+      @media screen and(max-width: 600px) {
+        min-height: 200px;
+      }
     }
   }
   #organising,
