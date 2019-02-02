@@ -1,0 +1,37 @@
+#team .sticky {
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #920224;
+  z-index: 100; }
+
+#team #core-team .column,
+#team #extended-core .column {
+  min-height: 180px; }
+
+#team #organising .column,
+#team #creative .column {
+  min-height: 130px; }
+
+#team #technical {
+  margin-bottom: 100px; }
+
+#team .row .column {
+  max-height: 450px;
+  margin-top: 10px; }
+
+#team .row .image-card {
+  width: 100%; }
+  #team .row .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 15vw;
+    max-height: 15vw;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; }
+  #team .row .image-card h4,
+  #team .row .image-card h5 {
+    text-align: center; }

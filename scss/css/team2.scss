@@ -1,0 +1,52 @@
+#team {
+  .sticky {
+    position: sticky;
+    top: 0px;
+
+    text-align: center;
+
+    font-weight: 700;
+    line-height: 1.45;
+    color: rgb(146, 2, 36);
+    z-index: 100;
+  }
+  #core-team,
+  #extended-core {
+    .column {
+      min-height: 180px;
+    }
+  }
+  #organising,
+  #creative {
+    .column {
+      min-height: 130px;
+    }
+  }
+  #technical {
+    margin-bottom: 100px;
+  }
+  .row {
+    .column {
+      max-height: 450px;
+      margin-top: 10px;
+    }
+
+    .image-card {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 15vw;
+        max-height: 15vw;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+      h4,
+      h5 {
+        text-align: center;
+      }
+    }
+  }
+}

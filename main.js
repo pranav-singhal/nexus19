@@ -49,10 +49,10 @@ app.use('/', express.static('app'));
 app.get('/', function(req, res) {
   res.render('pages/index');
 });
-
-app.get('/team', function(req, res) {
-  res.render('pages/team');
-});
+//
+// app.get('/team', function(req, res) {
+//   res.render('pages/team');
+// });
 app.get('/events', (req, res) => {
   res.render('pages/events');
 });
@@ -72,6 +72,9 @@ app.get('/past-sponsors', (req, res) => {
 });
 app.get('/faq', (req, res) => {
   res.render('pages/faq');
+});
+app.get('/team', (req, res) => {
+  res.render('pages/team2');
 });
 app.get('/get_modal_content', (req, res) => {
   console.log(req.query);
