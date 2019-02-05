@@ -10,8 +10,11 @@ body {
 }
 #section-background {
   /* background-attachment: scroll; */
+  overflow-y: hidden;
   padding-top: 20px;
-  background-image: url('/assets/images/title-header.jpg');
+  /* background-image: url('/assets/images/title-header.jpg'); */
+  background-image: url('/assets/images/new-back8.jpg');
+  /* background-image: url('/assets/images/team-background1.jpg'); */
   /* background: url('https://spark.adobe.com/page/YGSMxx4ueu8gu/images/c119837c-f784-4084-8e57-6eaf2eaebb15.jpg?asset_id=e11db1a6-9c74-47d1-a44f-9b25c796861b&img_etag=db97201b056bd722603c3a93c9a10d3d&size=2560')
     no-repeat center center; */
   /* background: url('https://spark.adobe.com/page/YGSMxx4ueu8gu/images/5eb2338b-5e83-4fba-8c41-da1bc36f0ffb.jpg?asset_id=6ab382c8-9db0-49fe-952e-94e6005c45ca&img_etag=91be09df16e8cba824e6f1541c670167&size=2560')
@@ -24,11 +27,11 @@ body {
   /* transition: all 5s; */
   /* transform: scale(1.2); */
   background-repeat: no-repeat;
-  background-position: 10% 20%;
+  background-position: 50% 50%;
 
   scroll-behavior: smooth;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   min-width: 100vw;
   /* position: relative; */
   /* position: fixed; */
@@ -60,16 +63,23 @@ body {
   text-align: left;
 } */
 #logo {
-  width: 150px;
+  width: 250px;
   max-width: 80vw;
   /* position: fixed; */
   display: block;
   margin: 0 auto;
 }
 #DateCountdown {
-  width: 400px;
-  max-width: 80vw;
+  width: 600px;
+  max-width: 90vw;
   margin: 0 auto;
+  padding-top: 18vh;
+  padding-left: 40px;
+}
+@media (max-width: 575.98px) {
+  #DateCountdown {
+    padding-left: 10px;
+  }
 }
 .title-header-view {
   display: inline-block;
