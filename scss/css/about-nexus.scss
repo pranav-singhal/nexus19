@@ -191,11 +191,16 @@ h1 {
           margin-top: 0;
         }
       }
+      img {
+        @media (max-width: 767.98px) {
+          margin-top: 31%;
+        }
+      }
     }
     #rock-night,
     #star-night {
       .text-section {
-        margin-top: 3%;
+        margin-top: 10%;
         @media (max-width: 767.98px) {
           margin-top: 0;
         }
@@ -203,10 +208,20 @@ h1 {
           margin-top: 0;
         }
       }
+      img {
+        @media (max-width: 767.98px) {
+          margin-top: 8%;
+        }
+      }
       margin-top: 3%;
     }
     #star-night {
       margin-bottom: 50px;
+      img {
+        @media (max-width: 767.98px) {
+          margin-top: 12%;
+        }
+      }
     }
   }
 }
