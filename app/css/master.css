@@ -13,7 +13,7 @@ body {
   overflow-y: hidden;
   padding-top: 20px;
   /* background-image: url('/assets/images/title-header.jpg'); */
-  background-image: url('/assets/images/new-back8.jpg');
+  background-image: url('/assets/images/new-back6.jpg');
   /* background-image: url('/assets/images/team-background1.jpg'); */
   /* background: url('https://spark.adobe.com/page/YGSMxx4ueu8gu/images/c119837c-f784-4084-8e57-6eaf2eaebb15.jpg?asset_id=e11db1a6-9c74-47d1-a44f-9b25c796861b&img_etag=db97201b056bd722603c3a93c9a10d3d&size=2560')
     no-repeat center center; */
@@ -67,12 +67,12 @@ body {
   max-width: 80vw;
   /* position: fixed; */
   display: block;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 #DateCountdown {
   width: 600px;
   max-width: 90vw;
-  margin: 0 auto;
+  margin: -170px auto;
   padding-top: 18vh;
   padding-left: 40px;
 }
