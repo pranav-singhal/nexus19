@@ -40,4 +40,6 @@
     border-radius: 50%; }
   #team .row .image-card h4,
   #team .row .image-card h5 {
-    text-align: center; }
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize; }
