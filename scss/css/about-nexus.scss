@@ -54,11 +54,11 @@ main {
     position: relative;
     bottom: 0px;
     width: 100%;
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       bottom: 0;
     }
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 600px) {
       bottom: 0;
     }
   }
@@ -99,16 +99,16 @@ h1 {
   p#subtext {
     font-size: 2.6vw;
     text-align: center;
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       font-size: 3.6vw;
     }
   }
   margin-top: 120px;
-  @media (max-width: 767.98px) {
+  @media (max-width: 600px) {
     margin-top: 50px;
   }
 
-  @media (max-width: 991.98px) {
+  @media (max-width: 600px) {
     margin-top: 50px;
   }
   #about-nexus-content {
@@ -121,10 +121,10 @@ h1 {
       font-size: 1.95em;
       font-weight: 400;
       line-height: 1.5;
-      @media (max-width: 767.98px) {
+      @media (max-width: 600px) {
         font-size: 4vw;
       }
-      @media (max-width: 991.98px) {
+      @media (max-width: 600px) {
         font-size: 4vw;
       }
     }
@@ -142,11 +142,11 @@ h1 {
 
         max-width: 150px;
         max-height: 150px;
-        @media (max-width: 767.98px) {
+        @media (max-width: 600px) {
           max-width: 50px;
           max-height: 50px;
         }
-        @media (max-width: 991.98px) {
+        @media (max-width: 600px) {
           max-width: 50px;
           max-height: 50px;
         }
@@ -173,10 +173,10 @@ h1 {
       }
       p {
         font-size: 1.4vw;
-        @media (max-width: 767.98px) {
+        @media (max-width: 600px) {
           font-size: 10px;
         }
-        @media (max-width: 991.98px) {
+        @media (max-width: 600px) {
           font-size: 10px;
         }
       }
@@ -184,15 +184,15 @@ h1 {
     #sufi-night {
       .text-section {
         margin-top: 8%;
-        @media (max-width: 767.98px) {
+        @media (max-width: 600px) {
           margin-top: 0;
         }
-        @media (max-width: 991.98px) {
+        @media (max-width: 600px) {
           margin-top: 0;
         }
       }
       img {
-        @media (max-width: 767.98px) {
+        @media (max-width: 600px) {
           margin-top: 31%;
         }
       }
@@ -201,15 +201,15 @@ h1 {
     #star-night {
       .text-section {
         margin-top: 10%;
-        @media (max-width: 767.98px) {
+        @media (max-width: 600px) {
           margin-top: 0;
         }
-        @media (max-width: 991.98px) {
+        @media (max-width: 600px) {
           margin-top: 0;
         }
       }
       img {
-        @media (max-width: 767.98px) {
+        @media (max-width: 600px) {
           margin-top: 8%;
         }
       }
@@ -218,7 +218,7 @@ h1 {
     #star-night {
       margin-bottom: 50px;
       img {
-        @media (max-width: 767.98px) {
+        @media (max-width: 600px) {
           margin-top: 12%;
         }
       }

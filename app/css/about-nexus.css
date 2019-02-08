@@ -32,10 +32,10 @@ main * {
     position: relative;
     bottom: 0px;
     width: 100%; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       * hr {
         bottom: 0; } }
-    @media (max-width: 991.98px) {
+    @media (max-width: 600px) {
       * hr {
         bottom: 0; } }
 
@@ -69,13 +69,13 @@ h1 {
   #about-nexus p#subtext {
     font-size: 2.6vw;
     text-align: center; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       #about-nexus p#subtext {
         font-size: 3.6vw; } }
-  @media (max-width: 767.98px) {
+  @media (max-width: 600px) {
     #about-nexus {
       margin-top: 50px; } }
-  @media (max-width: 991.98px) {
+  @media (max-width: 600px) {
     #about-nexus {
       margin-top: 50px; } }
   #about-nexus #about-nexus-content .column p {
@@ -84,10 +84,10 @@ h1 {
     font-size: 1.95em;
     font-weight: 400;
     line-height: 1.5; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       #about-nexus #about-nexus-content .column p {
         font-size: 4vw; } }
-    @media (max-width: 991.98px) {
+    @media (max-width: 600px) {
       #about-nexus #about-nexus-content .column p {
         font-size: 4vw; } }
   #about-nexus #about-nexus-content img {
@@ -100,11 +100,11 @@ h1 {
       margin: 0 auto;
       max-width: 150px;
       max-height: 150px; }
-      @media (max-width: 767.98px) {
+      @media (max-width: 600px) {
         #about-nexus #highlights .col-md-3 img {
           max-width: 50px;
           max-height: 50px; } }
-      @media (max-width: 991.98px) {
+      @media (max-width: 600px) {
         #about-nexus #highlights .col-md-3 img {
           max-width: 50px;
           max-height: 50px; } }
@@ -122,21 +122,21 @@ h1 {
       font-size: 2vw; }
     #about-nexus #fest-nights .text-section p {
       font-size: 1.4vw; }
-      @media (max-width: 767.98px) {
+      @media (max-width: 600px) {
         #about-nexus #fest-nights .text-section p {
           font-size: 10px; } }
-      @media (max-width: 991.98px) {
+      @media (max-width: 600px) {
         #about-nexus #fest-nights .text-section p {
           font-size: 10px; } }
   #about-nexus #fest-nights #sufi-night .text-section {
     margin-top: 8%; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       #about-nexus #fest-nights #sufi-night .text-section {
         margin-top: 0; } }
-    @media (max-width: 991.98px) {
+    @media (max-width: 600px) {
       #about-nexus #fest-nights #sufi-night .text-section {
         margin-top: 0; } }
-  @media (max-width: 767.98px) {
+  @media (max-width: 600px) {
     #about-nexus #fest-nights #sufi-night img {
       margin-top: 31%; } }
   #about-nexus #fest-nights #rock-night,
@@ -145,20 +145,20 @@ h1 {
     #about-nexus #fest-nights #rock-night .text-section,
     #about-nexus #fest-nights #star-night .text-section {
       margin-top: 10%; }
-      @media (max-width: 767.98px) {
+      @media (max-width: 600px) {
         #about-nexus #fest-nights #rock-night .text-section,
         #about-nexus #fest-nights #star-night .text-section {
           margin-top: 0; } }
-      @media (max-width: 991.98px) {
+      @media (max-width: 600px) {
         #about-nexus #fest-nights #rock-night .text-section,
         #about-nexus #fest-nights #star-night .text-section {
           margin-top: 0; } }
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       #about-nexus #fest-nights #rock-night img,
       #about-nexus #fest-nights #star-night img {
         margin-top: 8%; } }
   #about-nexus #fest-nights #star-night {
     margin-bottom: 50px; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 600px) {
       #about-nexus #fest-nights #star-night img {
         margin-top: 12%; } }
