@@ -29,4 +29,5 @@ $(document).ready(function() {
   });
 
   console.log('in countdown js');
+  $('.modal').modal();
 });

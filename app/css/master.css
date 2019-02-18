@@ -54,6 +54,16 @@ body {
     /* scroll-behavior: smooth; */
   }
 }
+.modal .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 2%;
+}
 
 /* #section-background #title-header {
   height: 100%;
